@@ -1,0 +1,100 @@
+{
+	"classOneData": [{
+			"id": "1",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "2",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "3",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "4",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "5",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "6",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		}
+	],
+	"classTwoData": [{
+			"id": "11",
+			"title": "采集运维/计量装置故障",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "12",
+			"title": "采集运维/计量装置故障",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "13",
+			"title": "采集运维/计量装置故障",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "14",
+			"title": "现场计量/周期检验",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "15",
+			"title": "采集运维/计量装置故障",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		},
+		{
+			"id": "16",
+			"title": "采集运维/计量装置故障",
+			"unit": "秀惠供电所",
+			"address": "济南市天桥区堤口路177号",
+			"isCheck": false,
+			"isDelState": false
+		}
+	]
+}
