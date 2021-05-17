@@ -1,6 +1,6 @@
 <template>
 	<view class="tabSwiper">
-		<uni-nav-bar :statusBar="true" left-icon="back" left-text=" " right-text=" " title="工作票管理"
+		<uni-nav-bar :statusBar="true" left-icon="back" left-text=" " right-text=" " title="作业计划管理"
 			background-color="#14C893" color="#ffffff" fixed="true" @clickLeft="navback">
 		</uni-nav-bar>
 		<!-- tab切换 -->
@@ -33,10 +33,10 @@
 		data() {
 			return {
 				tabs: [{
-						name: '全部'
+						name: '未开始'
 					},
 					{
-						name: '顺序'
+						name: '执行中'
 					}
 				],
 				activeTab: 0, // tabList索引
