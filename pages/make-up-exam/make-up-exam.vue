@@ -14,21 +14,24 @@
 
 		<swiper class="swiperbox" :duration="200" :current="current" @change="swiperChange">
 			<swiper-item v-for="(item,index) in tabs" :key="'item' + index">
-				<mescroll-item :i="index" :index="activeTab" :tabs="tabs"></mescroll-item>
+				<work-manager-item class="work-manager-item" :i="index" :index="activeTab"></work-manager-item>
 			</swiper-item>
 		</swiper>
+		<view class="cardbutton" ref="btnref">
+			<view class="button primarybtn" @tap="applyWorkPlan">申请作业计划</view>
+		</view>
 	</view>
 </template>
 
 <script>
 	import sTabs from '@/components/s-tabs/s-tabs/index.vue'
 	import sTab from '@/components/s-tabs/s-tab/index.vue'
-	import MescrollItem from './mescroll-swiper-item.vue'
+	import workManagerItem from './work-manager-item.vue'
 	export default {
 		components: {
 			sTabs,
 			sTab,
-			MescrollItem
+			workManagerItem
 		},
 		data() {
 			return {
@@ -54,8 +57,13 @@
 				var index = e.target.current || e.detail.current;
 				this.current = index;
 				this.activeTab = this.current
-
 			},
+			/**
+			 * 申请作业计划
+			 */
+			applyWorkPlan:function(){
+				
+			}
 		}
 	}
 </script>
@@ -69,5 +77,9 @@
 		.swiperbox {
 			height: calc(100vh - 88rpx - 92rpx);
 		}
+	}
+	
+	.work-manager-item{
+		background-color: #F5F5F5;
 	}
 </style>

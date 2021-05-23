@@ -5,7 +5,7 @@
 	-->
 	 <mescroll-uni ref="mescrollRef" @init="mescrollInit" :down="downOption" @down="downCallback" :up="upOption" @up="upCallback" @emptyclick="emptyClick">
 		<!-- 数据列表 -->
-		<good-list :list="goods"></good-list>
+		<work-plan-item :list="goods"></work-plan-item>
 	</mescroll-uni>
 </template>
 
@@ -13,15 +13,15 @@
 	import mescrollUni from "@/components/mescroll-uni/mescroll-uni.vue"
 	import MescrollMixin from "@/components/mescroll-uni/mescroll-mixins.js";
 	import MescrollMoreItemMixin from "@/components/mescroll-uni/mixins/mescroll-more-item.js";
-	import {apiSearch} from "@/api/goodsData/mock.js"
-	import goodList from "@/components/good-list/good-list.vue"
+	import {searchWorkPlan} from "@/api/goodsData/mock.js"
+	import workPlanItem from "@/components/work-plan-item/work-plan-item.vue"
 	
 	export default {
 		
 		mixins: [MescrollMixin,MescrollMoreItemMixin], // 注意此处还需使用MescrollMoreItemMixin (必须写在MescrollMixin后面)
 		components:{
 			mescrollUni,
-			goodList
+			workPlanItem
 		},
 		data() {
 			return {
@@ -50,20 +50,11 @@
 				default(){
 					return 0
 				}
-			},
-			tabs: { // 为了请求数据,演示用,可根据自己的项目判断是否要传
-				type: Array,
-				default(){
-					return []
-				}
 			}
-		},
-		onShow:function(){
-			alert("goods")
 		},
 		methods: {
 			/*下拉刷新的回调 */
-			downCallback() {
+			downCallback() {				
 				// 这里加载你想下拉刷新的数据, 比如刷新轮播数据
 				// loadSwiper();
 				// 下拉刷新的回调,默认重置上拉加载列表为第一页 (自动执行 page.num=1, 再触发upCallback方法 )
@@ -72,8 +63,8 @@
 			/*上拉加载的回调: 其中page.num:当前页 从1开始, page.size:每页数据条数,默认10 */
 			upCallback(page) {
 				//联网加载数据
-				let keyword = this.tabs[this.i].name
-				apiSearch(page.num, page.size, keyword).then(curPageData=>{
+				let keyword = '';
+				searchWorkPlan(page.num, page.size, keyword).then(curPageData=>{
 					//联网成功的回调,隐藏下拉刷新和上拉加载的状态;
 					this.mescroll.endSuccess(curPageData.length);
 					//设置列表数据
