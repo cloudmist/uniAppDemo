@@ -62,7 +62,9 @@
 			 * 申请作业计划
 			 */
 			applyWorkPlan:function(){
-				
+				uni.navigateTo({
+					url:'./work-plan'
+				})
 			}
 		}
 	}

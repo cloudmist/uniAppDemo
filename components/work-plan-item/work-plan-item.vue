@@ -15,15 +15,16 @@
 					<text class="good-price">应检数量：</text>
 					<text class="plan-content">{{plan.checkCount}}</text>
 				</view>
-				<view class="flex-row-vcenter" >
+				<view class="flex-row" >
 					<text class="good-price">计划时间：</text>
 					<view class="flex-col">
-						<text class="green-point"></text>
+						<view class="green-point"></view>
 						<view class="vertical-line"></view>
-						<text class="red-point"></text>
+						<view class="red-point"></view>
 					</view>
-					<view class="flex-col">
-						<text>{{plan.checkCount}}</text>
+					<view class="flex-col-c">
+						<text class="plan-content">{{plan.startTime}}</text>
+						<text class="plan-content">{{plan.endTime}}</text>
 					</view>
 				</view>
 			</view>
@@ -55,7 +56,7 @@
 				padding-right: 0rpx;
 
 				.flex-row-vcenter {
-					height: 45rpx;
+					height: 48rpx;
 				}
 
 				.good-name {
@@ -103,6 +104,26 @@
 				.good-sold {
 					font-size: 30rpx;
 					color: gray;
+				}
+				
+				.green-point{
+					margin-top: 10rpx;
+					width: 20rpx;
+					height: 20rpx;
+					background-color: #14C893;
+					border-radius: 10rpx;
+				}
+				
+				.red-point{
+					width: 20rpx;
+					height: 20rpx;
+					background-color: red;
+					border-radius: 10rpx;
+					margin-top: 25rpx;
+				}
+				
+				.flex-col-c{
+					margin-left: 10rpx;
 				}
 
 			}

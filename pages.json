@@ -4,6 +4,9 @@
 			"path": "pages/make-up-exam/make-up-exam"
 		},
 		{
+			"path": "pages/make-up-exam/work-plan"
+		},
+		{
 			"path": "pages/third/third"
 		}, {
 			"path": "pages/second/second"
