@@ -194,12 +194,13 @@ export function searchWorkPlan(pageNum, pageSize, keyword) {
 			try {
 				// 模拟搜索
 				let list = []
-				// 模拟搜索全部商品
-				for (let i = (pageNum - 1) * pageSize; i < pageNum * pageSize; i++) {
-					if (i === workPlan.length) break
-					list.push(workPlan[i])
+				
+                // 模拟关键词搜索
+				for (let i = 0; i < workPlan.length; i++) {
+					if (workPlan[i].progress.indexOf(keyword) !== -1) {
+						list.push(workPlan[i])
+					}
 				}
-
 				//模拟接口请求成功
 				console.log("page.num=" + pageNum + ", page.size=" + pageSize +
 					", curPageData.length=" + list.length + ", keyword=" + keyword);

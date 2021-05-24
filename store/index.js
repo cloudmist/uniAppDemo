@@ -10,7 +10,10 @@ const store = new Vuex.Store({
         "classOneCheckList":[],
 		"classTwoCheckList":[],
         "countOne":0,
-		"countTwo":0
+		"countTwo":0,
+		"workType":"",
+		"principal":"",
+		"workPlanList":[],
     }
 })
 export default store

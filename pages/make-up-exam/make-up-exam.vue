@@ -14,7 +14,7 @@
 
 		<swiper class="swiperbox" :duration="200" :current="current" @change="swiperChange">
 			<swiper-item v-for="(item,index) in tabs" :key="'item' + index">
-				<work-manager-item class="work-manager-item" :i="index" :index="activeTab"></work-manager-item>
+				<work-manager-item class="work-manager-item" :i="index" :index="activeTab" :tabs="tabs"></work-manager-item>
 			</swiper-item>
 		</swiper>
 		<view class="cardbutton" ref="btnref">
