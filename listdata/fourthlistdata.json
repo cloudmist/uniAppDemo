@@ -1,0 +1,172 @@
+[{
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "合同用电类别",
+		"PID": "1",
+		"REMARKS": "htydlb",
+		"CONT_ID": "2"
+	}, {
+		"SORT": 2,
+		"STATE": "0",
+		"CONT_NAME": "实际用电类别",
+		"PID": "1",
+		"REMARKS": "sjydlb",
+		"CONT_ID": "3"
+	}, {
+		"SORT": 3,
+		"STATE": "0",
+		"CONT_NAME": "改变类别的设备容量",
+		"PID": "1",
+		"REMARKS": "sbrl",
+		"CONT_ID": "4"
+	}, {
+		"SORT": 4,
+		"STATE": "0",
+		"CONT_NAME": "擅自更改的时间",
+		"PID": "1",
+		"REMARKS": "ggsj",
+		"CONT_ID": "5"
+	}],
+	"SORT": 1,
+	"STATE": "1",
+	"CONT_NAME": "擅改用电类别",
+	"PID": "-1",
+	"REMARKS": "w1",
+	"CONT_ID": "1"
+}, {
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "合同约定容量",
+		"PID": "6",
+		"REMARKS": "htrl",
+		"CONT_ID": "7"
+	}, {
+		"SORT": 2,
+		"STATE": "0",
+		"CONT_NAME": "实际使用容量",
+		"PID": "6",
+		"REMARKS": "sjrl",
+		"CONT_ID": "8"
+	}, {
+		"SORT": 3,
+		"STATE": "0",
+		"CONT_NAME": "私自增容时间",
+		"PID": "6",
+		"REMARKS": "zrsj",
+		"CONT_ID": "9"
+	}],
+	"SORT": 2,
+	"STATE": "1",
+	"CONT_NAME": "擅超合同约定容量用电",
+	"PID": "-1",
+	"REMARKS": "w2",
+	"CONT_ID": "6"
+}, {
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "计划用电指标",
+		"PID": "10",
+		"REMARKS": "jhyd",
+		"CONT_ID": "11"
+	}, {
+		"SORT": 2,
+		"STATE": "0",
+		"CONT_NAME": "实际用电",
+		"PID": "10",
+		"REMARKS": "sjyd",
+		"CONT_ID": "12"
+	}],
+	"SORT": 3,
+	"STATE": "0",
+	"CONT_NAME": "擅超用电指标",
+	"PID": "-1",
+	"REMARKS": "w3",
+	"CONT_ID": "10"
+}, {
+	"SORT": 4,
+	"STATE": "1",
+	"CONT_NAME": "擅自使用已暂停的电力设备",
+	"PID": "-1",
+	"REMARKS": "w7",
+	"CONT_ID": "13"
+}, {
+	"SORT": 5,
+	"STATE": "1",
+	"CONT_NAME": "擅自启封电力设备",
+	"PID": "-1",
+	"REMARKS": "fc1",
+	"CONT_ID": "14"
+}, {
+	"SORT": 6,
+	"STATE": "1",
+	"CONT_NAME": "擅自迁移、更动、操作计量装置",
+	"PID": "-1",
+	"REMARKS": "w6",
+	"CONT_ID": "15"
+}, {
+	"SORT": 7,
+	"STATE": "1",
+	"CONT_NAME": "擅自迁移、更动、操作供电设施",
+	"PID": "-1",
+	"REMARKS": "w6",
+	"CONT_ID": "16"
+}, {
+	"SORT": 8,
+	"STATE": "1",
+	"CONT_NAME": "擅自迁移、更动、操作用户受电设备",
+	"PID": "-1",
+	"REMARKS": "w6",
+	"CONT_ID": "17"
+}, {
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "电源容量",
+		"PID": "18",
+		"REMARKS": "dyrl",
+		"CONT_ID": "19"
+	}],
+	"SORT": 9,
+	"STATE": "1",
+	"CONT_NAME": "擅自引入电源",
+	"PID": "-1",
+	"REMARKS": "wtlx",
+	"CONT_ID": "18"
+}, {
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "电源容量",
+		"PID": "20",
+		"REMARKS": "dyrl",
+		"CONT_ID": "21"
+	}],
+	"SORT": 10,
+	"STATE": "1",
+	"CONT_NAME": "擅自供出电源",
+	"PID": "-1",
+	"REMARKS": "wtlx",
+	"CONT_ID": "20"
+}, {
+	"children": [{
+		"SORT": 1,
+		"STATE": "0",
+		"CONT_NAME": "电源容量",
+		"PID": "22",
+		"CONT_ID": "24"
+	}],
+	"SORT": 11,
+	"STATE": "1",
+	"CONT_NAME": "自备电源擅自并网",
+	"PID": "-1",
+	"CONT_ID": "22"
+}, {
+	"SORT": 12,
+	"STATE": "1",
+	"CONT_NAME": "其他违约",
+	"PID": "-1",
+	"CONT_ID": "23"
+}]
